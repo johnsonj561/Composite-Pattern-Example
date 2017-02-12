@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_G7kSYPEgEeaWVdXlSArgjQ" name="model">
+  <ownedComment xmi:id="_RIBp4PEhEeaWVdXlSArgjQ">
+    <body>Client</body>
+  </ownedComment>
+  <ownedComment xmi:id="_9cjS4PEiEeaWVdXlSArgjQ" annotatedElement="_tb8n8PEgEeaWVdXlSArgjQ">
+    <body>Composite</body>
+  </ownedComment>
+  <ownedComment xmi:id="_I7KEMPEjEeaWVdXlSArgjQ" annotatedElement="_MFHUMPEiEeaWVdXlSArgjQ">
+    <body>Leaf (No Children)</body>
+  </ownedComment>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_VxlEYPEgEeaWVdXlSArgjQ" name="SongComponent">
+    <ownedOperation xmi:id="_c9ss0PEgEeaWVdXlSArgjQ" name="add" isAbstract="true"/>
+    <ownedOperation xmi:id="_gLxyYPEgEeaWVdXlSArgjQ" name="getSongName"/>
+    <ownedOperation xmi:id="_hagPUPEgEeaWVdXlSArgjQ" name="getBandName"/>
+    <ownedOperation xmi:id="_kHoj8PEgEeaWVdXlSArgjQ" name="displaySongInfo"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_tb8n8PEgEeaWVdXlSArgjQ" clientDependency="_xbveUPEgEeaWVdXlSArgjQ _0KbSIPEgEeaWVdXlSArgjQ _3h8nkPEgEeaWVdXlSArgjQ _EDntgPEjEeaWVdXlSArgjQ" name="SongGroup">
+    <generalization xmi:id="_am9XkPEjEeaWVdXlSArgjQ" general="_VxlEYPEgEeaWVdXlSArgjQ"/>
+    <ownedAttribute xmi:id="_t0XdEPEiEeaWVdXlSArgjQ" name="groupName" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_yW2JwPEiEeaWVdXlSArgjQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_yW3X4PEiEeaWVdXlSArgjQ" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_yW5NEPEiEeaWVdXlSArgjQ">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_y2QCkPEiEeaWVdXlSArgjQ" name="groupDesc" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zvszEPEiEeaWVdXlSArgjQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zvuBMPEiEeaWVdXlSArgjQ" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_zvvPUPEiEeaWVdXlSArgjQ">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_0PZm0PEiEeaWVdXlSArgjQ" name="songComponents" visibility="public">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1G2zQPEiEeaWVdXlSArgjQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1G3aUPEiEeaWVdXlSArgjQ" value="1"/>
+      <defaultValue xmi:type="uml:LiteralString" xmi:id="_1G5PgPEiEeaWVdXlSArgjQ">
+        <value xsi:nil="true"/>
+      </defaultValue>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_1XX7gPEiEeaWVdXlSArgjQ" name="Property1"/>
+    <ownedAttribute xmi:id="_NkuQUPEjEeaWVdXlSArgjQ" name="song" type="_MFHUMPEiEeaWVdXlSArgjQ" association="_Nku3YPEjEeaWVdXlSArgjQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_NkuQUfEjEeaWVdXlSArgjQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_NkuQUvEjEeaWVdXlSArgjQ" value="1"/>
+    </ownedAttribute>
+    <interfaceRealization xmi:id="_3h8nkPEgEeaWVdXlSArgjQ" name="InterfaceRealization1" client="_tb8n8PEgEeaWVdXlSArgjQ" supplier="_VxlEYPEgEeaWVdXlSArgjQ" contract="_VxlEYPEgEeaWVdXlSArgjQ"/>
+    <ownedOperation xmi:id="_2lyPYPEiEeaWVdXlSArgjQ" name="displaySongInfo"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Abstraction" xmi:id="_xbveUPEgEeaWVdXlSArgjQ" name="Abstraction1" client="_tb8n8PEgEeaWVdXlSArgjQ" supplier="_VxlEYPEgEeaWVdXlSArgjQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_0KbSIPEgEeaWVdXlSArgjQ" name="Dependency1" client="_tb8n8PEgEeaWVdXlSArgjQ" supplier="_VxlEYPEgEeaWVdXlSArgjQ"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_UcZksPEhEeaWVdXlSArgjQ" name="Signal1"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_Yn24gPEhEeaWVdXlSArgjQ" name=""/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_5pshwPEhEeaWVdXlSArgjQ" name="DataType1"/>
+  <packagedElement xmi:type="uml:Model" xmi:id="_62uVkPEhEeaWVdXlSArgjQ" name="Client"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_MFHUMPEiEeaWVdXlSArgjQ" name="Song">
+    <generalization xmi:id="_bTS5IPEjEeaWVdXlSArgjQ" general="_VxlEYPEgEeaWVdXlSArgjQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_R5o3kPEiEeaWVdXlSArgjQ" name="songGroup_songComponent_1" memberEnd="_R5o3kfEiEeaWVdXlSArgjQ _R5nCYPEiEeaWVdXlSArgjQ">
+    <ownedEnd xmi:id="_R5o3kfEiEeaWVdXlSArgjQ" name="children" type="_tb8n8PEgEeaWVdXlSArgjQ" association="_R5o3kPEiEeaWVdXlSArgjQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R5o3kvEiEeaWVdXlSArgjQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R5o3k_EiEeaWVdXlSArgjQ" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_R5nCYPEiEeaWVdXlSArgjQ" name="songComponent" type="_VxlEYPEgEeaWVdXlSArgjQ" aggregation="shared" association="_R5o3kPEiEeaWVdXlSArgjQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_R5nCYfEiEeaWVdXlSArgjQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_R5nCYvEiEeaWVdXlSArgjQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_cDUdUPEiEeaWVdXlSArgjQ" name="" memberEnd="_cDUdUfEiEeaWVdXlSArgjQ _cDTPMPEiEeaWVdXlSArgjQ">
+    <ownedEnd xmi:id="_cDUdUfEiEeaWVdXlSArgjQ" name="" type="_MFHUMPEiEeaWVdXlSArgjQ" association="_cDUdUPEiEeaWVdXlSArgjQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cDUdUvEiEeaWVdXlSArgjQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cDUdU_EiEeaWVdXlSArgjQ" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_cDTPMPEiEeaWVdXlSArgjQ" name="" type="_VxlEYPEgEeaWVdXlSArgjQ" association="_cDUdUPEiEeaWVdXlSArgjQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cDTPMfEiEeaWVdXlSArgjQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cDTPMvEiEeaWVdXlSArgjQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_gHKtQPEiEeaWVdXlSArgjQ" name="songGroup_songComponent_2" memberEnd="_gHKtQfEiEeaWVdXlSArgjQ _gHJfIPEiEeaWVdXlSArgjQ">
+    <ownedEnd xmi:id="_gHKtQfEiEeaWVdXlSArgjQ" name="songGroup" type="_tb8n8PEgEeaWVdXlSArgjQ" association="_gHKtQPEiEeaWVdXlSArgjQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gHKtQvEiEeaWVdXlSArgjQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gHKtQ_EiEeaWVdXlSArgjQ" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_gHJfIPEiEeaWVdXlSArgjQ" name="songComponent" type="_VxlEYPEgEeaWVdXlSArgjQ" association="_gHKtQPEiEeaWVdXlSArgjQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gHJfIfEiEeaWVdXlSArgjQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gHJfIvEiEeaWVdXlSArgjQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_EDntgPEjEeaWVdXlSArgjQ" name="Dependency2" client="_tb8n8PEgEeaWVdXlSArgjQ" supplier="_VxlEYPEgEeaWVdXlSArgjQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Nku3YPEjEeaWVdXlSArgjQ" name="songGroup_song_1" memberEnd="_Nku3YfEjEeaWVdXlSArgjQ _NkuQUPEjEeaWVdXlSArgjQ">
+    <ownedEnd xmi:id="_Nku3YfEjEeaWVdXlSArgjQ" name="songGroup" type="_tb8n8PEgEeaWVdXlSArgjQ" association="_Nku3YPEjEeaWVdXlSArgjQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Nku3YvEjEeaWVdXlSArgjQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Nku3Y_EjEeaWVdXlSArgjQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_dGJ94PEjEeaWVdXlSArgjQ" name="songComponent_songGroup_1" memberEnd="_dGJ95PEjEeaWVdXlSArgjQ _dGJ94fEjEeaWVdXlSArgjQ">
+    <ownedEnd xmi:id="_dGJ94fEjEeaWVdXlSArgjQ" name="songGroup" type="_tb8n8PEgEeaWVdXlSArgjQ" association="_dGJ94PEjEeaWVdXlSArgjQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dGJ94vEjEeaWVdXlSArgjQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dGJ94_EjEeaWVdXlSArgjQ" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_dGJ95PEjEeaWVdXlSArgjQ" name="songComponent" type="_VxlEYPEgEeaWVdXlSArgjQ" aggregation="shared" association="_dGJ94PEjEeaWVdXlSArgjQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dGJ95fEjEeaWVdXlSArgjQ" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dGJ95vEjEeaWVdXlSArgjQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
